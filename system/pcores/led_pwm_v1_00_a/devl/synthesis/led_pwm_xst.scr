@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_00_a/devl/synthesis/led_pwm_xst.prj"
+-top led_pwm
+-p virtex6
+-ofn "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_00_a/devl/synthesis/led_pwm_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib led_pwm_v1_00_a

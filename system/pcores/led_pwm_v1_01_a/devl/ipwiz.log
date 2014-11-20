@@ -1,0 +1,2451 @@
+INFO:EDK:3186 - hierarchical library inclusion detected, all file(s) of library
+   proc_common_v3_00_a will be used ...
+INFO:EDK:3186 - hierarchical library inclusion detected, all file(s) of library
+   axi_lite_ipif_v1_01_a will be used ...
+Parsing PAO project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+HDL language for the peripheral (top level) design unit clk_prescaler is vhdl
+...
+resolving hierarchical inclusion of library proc_common_v3_00_a in
+/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/ ...
+resolving hierarchical inclusion of library axi_lite_ipif_v1_01_a in
+/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/ ...
+INFO:EDK:3391 - Create temporary xst project file:
+   /home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm.pr
+   j
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/muxf_struct_f.vhd" in Library proc_common_v3_00_a.
+Entity <muxf_struct> compiled.
+Entity <muxf_struct> (Architecture <imp>) compiled.
+Entity <muxf_struct_f> compiled.
+Entity <muxf_struct_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/cntr_incr_decr_addn_f.vhd" in Library proc_common_v3_00_a.
+Entity <cntr_incr_decr_addn_f> compiled.
+Entity <cntr_incr_decr_addn_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/dynshreg_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_f> compiled.
+Entity <dynshreg_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <counter_bit> compiled.
+Entity <counter_bit> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_muxcy_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy_f> compiled.
+Entity <or_muxcy_f> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_rbu_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu_f> compiled.
+Entity <srl_fifo_rbu_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/family.vhd" in Library proc_common_v3_00_a.
+Package <family> compiled.
+Package body <family> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter.vhd" in Library proc_common_v3_00_a.
+Entity <Counter> compiled.
+Entity <Counter> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/coregen_comp_defs.vhd" in Library proc_common_v3_00_a.
+Package <coregen_comp_defs> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/common_types_pkg.vhd" in Library proc_common_v3_00_a.
+Package <Common_Types> compiled.
+Package body <Common_Types> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/conv_funs_pkg.vhd" in Library proc_common_v3_00_a.
+Package <conv_funs_pkg> compiled.
+Package body <conv_funs_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/async_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <async_fifo_fg> compiled.
+Entity <async_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/sync_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <sync_fifo_fg> compiled.
+Entity <sync_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/basic_sfifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <basic_sfifo_fg> compiled.
+Entity <basic_sfifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/blk_mem_gen_wrapper.vhd" in Library proc_common_v3_00_a.
+Entity <blk_mem_gen_wrapper> compiled.
+Entity <blk_mem_gen_wrapper> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/addsub.vhd" in Library proc_common_v3_00_a.
+Entity <addsub> compiled.
+Entity <addsub> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/direct_path_cntr.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr> compiled.
+Entity <direct_path_cntr> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/direct_path_cntr_ai.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr_ai> compiled.
+Entity <direct_path_cntr_ai> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/down_counter.vhd" in Library proc_common_v3_00_a.
+Entity <down_counter> compiled.
+Entity <down_counter> (Architecture <simulation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/eval_timer.vhd" in Library proc_common_v3_00_a.
+Entity <eval_timer> compiled.
+Entity <eval_timer> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_steer.vhd" in Library proc_common_v3_00_a.
+Entity <IPIF_Steer> compiled.
+Entity <IPIF_Steer> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_steer128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_steer128> compiled.
+Entity <ipif_steer128> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_mirror128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_mirror128> compiled.
+Entity <ipif_mirror128> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ld_arith_reg.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg> compiled.
+Entity <ld_arith_reg> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ld_arith_reg2.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg2> compiled.
+Entity <ld_arith_reg2> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/mux_onehot.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot> compiled.
+Entity <mux_onehot> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_bits.vhd" in Library proc_common_v3_00_a.
+Entity <or_bits> compiled.
+Entity <or_bits> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect.vhd" in Library proc_common_v3_00_a.
+Entity <pselect> compiled.
+Entity <pselect> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect_mask.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_mask> compiled.
+Entity <pselect_mask> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <SRL_FIFO> compiled.
+Entity <SRL_FIFO> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo2.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo2> compiled.
+Entity <srl_fifo2> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo3.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo3> compiled.
+Entity <srl_fifo3> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_rbu.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu> compiled.
+Entity <srl_fifo_rbu> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/valid_be.vhd" in Library proc_common_v3_00_a.
+Entity <valid_be> compiled.
+Entity <valid_be> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_with_enable_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_with_enable_f> compiled.
+Entity <or_with_enable_f> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/dynshreg_i_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_i_f> compiled.
+Entity <dynshreg_i_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/mux_onehot_f.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot_f> compiled.
+Entity <mux_onehot_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_f> compiled.
+Entity <srl_fifo_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/compare_vectors_f.vhd" in Library proc_common_v3_00_a.
+Entity <compare_vectors_f> compiled.
+Entity <compare_vectors_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate_f> compiled.
+Entity <or_gate_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/soft_reset.vhd" in Library proc_common_v3_00_a.
+Entity <soft_reset> compiled.
+Entity <soft_reset> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/address_decoder.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <address_decoder> compiled.
+Entity <address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/slave_attachment.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <slave_attachment> compiled.
+Entity <slave_attachment> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/axi_lite_ipif.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <axi_lite_ipif> compiled.
+Entity <axi_lite_ipif> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/user_logic.vhd" in Library led_pwm_v1_00_a.
+Entity <user_logic> compiled.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 243. Undefined symbol 'duty_cyle_reg_0'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 243. duty_cyle_reg_0: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 238. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 251. Undefined symbol 'duty_cyle_reg_1'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 251. duty_cyle_reg_1: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 246. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 259. Undefined symbol 'duty_cyle_reg_2'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 259. duty_cyle_reg_2: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 254. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 267. Undefined symbol 'duty_cyle_reg_3'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 267. duty_cyle_reg_3: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 262. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 275. Undefined symbol 'duty_cyle_reg_4'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 275. duty_cyle_reg_4: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 270. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 283. Undefined symbol 'duty_cyle_reg_5'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 283. duty_cyle_reg_5: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 278. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 291. Undefined symbol 'duty_cyle_reg_6'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 291. duty_cyle_reg_6: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 286. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 299. Undefined symbol 'duty_cyle_reg_7'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 299. duty_cyle_reg_7: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 294. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 307. Undefined symbol 'duty_cyle_reg_8'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 307. duty_cyle_reg_8: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 302. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 315. Undefined symbol 'duty_cyle_reg_9'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 315. duty_cyle_reg_9: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 310. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 323. Undefined symbol
+   'duty_cyle_reg_10'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 323. duty_cyle_reg_10: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 318. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 331. Undefined symbol
+   'duty_cyle_reg_11'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 331. duty_cyle_reg_11: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 326. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 339. Undefined symbol
+   'duty_cyle_reg_12'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 339. duty_cyle_reg_12: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 334. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 347. Undefined symbol
+   'duty_cyle_reg_13'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 347. duty_cyle_reg_13: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 342. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 355. Undefined symbol
+   'duty_cyle_reg_14'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 355. duty_cyle_reg_14: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 350. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 363. Undefined symbol
+   'duty_cyle_reg_15'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 363. duty_cyle_reg_15: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 358. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 371. Undefined symbol
+   'duty_cyle_reg_16'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 371. duty_cyle_reg_16: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 366. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 379. Undefined symbol
+   'duty_cyle_reg_17'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 379. duty_cyle_reg_17: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 374. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 387. Undefined symbol
+   'duty_cyle_reg_18'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 387. duty_cyle_reg_18: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 382. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 395. Undefined symbol
+   'duty_cyle_reg_19'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 395. duty_cyle_reg_19: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 390. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 403. Undefined symbol
+   'duty_cyle_reg_20'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 403. duty_cyle_reg_20: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 398. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 411. Undefined symbol
+   'duty_cyle_reg_21'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 411. duty_cyle_reg_21: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 406. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 419. Undefined symbol
+   'duty_cyle_reg_22'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 419. duty_cyle_reg_22: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 414. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 427. Undefined symbol
+   'duty_cyle_reg_23'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 427. duty_cyle_reg_23: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 422. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 435. Undefined symbol
+   'duty_cyle_reg_24'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 435. duty_cyle_reg_24: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 430. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 443. Undefined symbol
+   'duty_cyle_reg_25'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 443. duty_cyle_reg_25: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 438. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 451. Undefined symbol
+   'duty_cyle_reg_26'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 451. duty_cyle_reg_26: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:3313 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 453. Undefined symbol 'led26'.  Should
+   it be: led6 or led16?
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 453. led26: Undefined symbol (last
+   report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 446. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 459. Undefined symbol
+   'duty_cyle_reg_27'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 459. duty_cyle_reg_27: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 454. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 467. Undefined symbol
+   'duty_cyle_reg_28'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 467. duty_cyle_reg_28: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 462. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:HDLParsers:3312 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 475. Undefined symbol
+   'duty_cyle_reg_29'.
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 475. duty_cyle_reg_29: Undefined symbol
+   (last report in this block)
+ERROR:HDLParsers:851 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 470. Formal duty_cycle of pwm with no
+   default value must be associated with an actual value.
+ERROR:EDK:2121 - Parse Errors encountered in HDL source
+INFO:EDK:3186 - hierarchical library inclusion detected, all file(s) of library
+   proc_common_v3_00_a will be used ...
+INFO:EDK:3186 - hierarchical library inclusion detected, all file(s) of library
+   axi_lite_ipif_v1_01_a will be used ...
+Parsing PAO project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+HDL language for the peripheral (top level) design unit clk_prescaler is vhdl
+...
+resolving hierarchical inclusion of library proc_common_v3_00_a in
+/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/ ...
+resolving hierarchical inclusion of library axi_lite_ipif_v1_01_a in
+/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/ ...
+INFO:EDK:3391 - Create temporary xst project file:
+   /home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm.pr
+   j
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/muxf_struct_f.vhd" in Library proc_common_v3_00_a.
+Entity <muxf_struct> compiled.
+Entity <muxf_struct> (Architecture <imp>) compiled.
+Entity <muxf_struct_f> compiled.
+Entity <muxf_struct_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/cntr_incr_decr_addn_f.vhd" in Library proc_common_v3_00_a.
+Entity <cntr_incr_decr_addn_f> compiled.
+Entity <cntr_incr_decr_addn_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/dynshreg_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_f> compiled.
+Entity <dynshreg_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <counter_bit> compiled.
+Entity <counter_bit> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_muxcy_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy_f> compiled.
+Entity <or_muxcy_f> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_rbu_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu_f> compiled.
+Entity <srl_fifo_rbu_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/family.vhd" in Library proc_common_v3_00_a.
+Package <family> compiled.
+Package body <family> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter.vhd" in Library proc_common_v3_00_a.
+Entity <Counter> compiled.
+Entity <Counter> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/coregen_comp_defs.vhd" in Library proc_common_v3_00_a.
+Package <coregen_comp_defs> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/common_types_pkg.vhd" in Library proc_common_v3_00_a.
+Package <Common_Types> compiled.
+Package body <Common_Types> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/conv_funs_pkg.vhd" in Library proc_common_v3_00_a.
+Package <conv_funs_pkg> compiled.
+Package body <conv_funs_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/async_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <async_fifo_fg> compiled.
+Entity <async_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/sync_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <sync_fifo_fg> compiled.
+Entity <sync_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/basic_sfifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <basic_sfifo_fg> compiled.
+Entity <basic_sfifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/blk_mem_gen_wrapper.vhd" in Library proc_common_v3_00_a.
+Entity <blk_mem_gen_wrapper> compiled.
+Entity <blk_mem_gen_wrapper> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/addsub.vhd" in Library proc_common_v3_00_a.
+Entity <addsub> compiled.
+Entity <addsub> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/direct_path_cntr.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr> compiled.
+Entity <direct_path_cntr> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/direct_path_cntr_ai.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr_ai> compiled.
+Entity <direct_path_cntr_ai> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/down_counter.vhd" in Library proc_common_v3_00_a.
+Entity <down_counter> compiled.
+Entity <down_counter> (Architecture <simulation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/eval_timer.vhd" in Library proc_common_v3_00_a.
+Entity <eval_timer> compiled.
+Entity <eval_timer> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_steer.vhd" in Library proc_common_v3_00_a.
+Entity <IPIF_Steer> compiled.
+Entity <IPIF_Steer> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_steer128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_steer128> compiled.
+Entity <ipif_steer128> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_mirror128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_mirror128> compiled.
+Entity <ipif_mirror128> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ld_arith_reg.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg> compiled.
+Entity <ld_arith_reg> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ld_arith_reg2.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg2> compiled.
+Entity <ld_arith_reg2> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/mux_onehot.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot> compiled.
+Entity <mux_onehot> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_bits.vhd" in Library proc_common_v3_00_a.
+Entity <or_bits> compiled.
+Entity <or_bits> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect.vhd" in Library proc_common_v3_00_a.
+Entity <pselect> compiled.
+Entity <pselect> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect_mask.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_mask> compiled.
+Entity <pselect_mask> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <SRL_FIFO> compiled.
+Entity <SRL_FIFO> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo2.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo2> compiled.
+Entity <srl_fifo2> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo3.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo3> compiled.
+Entity <srl_fifo3> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_rbu.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu> compiled.
+Entity <srl_fifo_rbu> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/valid_be.vhd" in Library proc_common_v3_00_a.
+Entity <valid_be> compiled.
+Entity <valid_be> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_with_enable_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_with_enable_f> compiled.
+Entity <or_with_enable_f> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/dynshreg_i_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_i_f> compiled.
+Entity <dynshreg_i_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/mux_onehot_f.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot_f> compiled.
+Entity <mux_onehot_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_f> compiled.
+Entity <srl_fifo_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/compare_vectors_f.vhd" in Library proc_common_v3_00_a.
+Entity <compare_vectors_f> compiled.
+Entity <compare_vectors_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate_f> compiled.
+Entity <or_gate_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/soft_reset.vhd" in Library proc_common_v3_00_a.
+Entity <soft_reset> compiled.
+Entity <soft_reset> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/address_decoder.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <address_decoder> compiled.
+Entity <address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/slave_attachment.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <slave_attachment> compiled.
+Entity <slave_attachment> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/axi_lite_ipif.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <axi_lite_ipif> compiled.
+Entity <axi_lite_ipif> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/user_logic.vhd" in Library led_pwm_v1_00_a.
+Entity <user_logic> compiled.
+ERROR:HDLParsers:3313 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 453. Undefined symbol 'led26'.  Should
+   it be: led6 or led16?
+ERROR:HDLParsers:1209 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/user_logic.vhd" Line 453. led26: Undefined symbol (last
+   report in this block)
+ERROR:EDK:2121 - Parse Errors encountered in HDL source
+INFO:EDK:3186 - hierarchical library inclusion detected, all file(s) of library
+   proc_common_v3_00_a will be used ...
+INFO:EDK:3186 - hierarchical library inclusion detected, all file(s) of library
+   axi_lite_ipif_v1_01_a will be used ...
+Parsing PAO project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+HDL language for the peripheral (top level) design unit pwm is vhdl ...
+resolving hierarchical inclusion of library proc_common_v3_00_a in
+/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/ ...
+resolving hierarchical inclusion of library axi_lite_ipif_v1_01_a in
+/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/ ...
+INFO:EDK:3391 - Create temporary xst project file:
+   /home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm.pr
+   j
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/muxf_struct_f.vhd" in Library proc_common_v3_00_a.
+Entity <muxf_struct> compiled.
+Entity <muxf_struct> (Architecture <imp>) compiled.
+Entity <muxf_struct_f> compiled.
+Entity <muxf_struct_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/cntr_incr_decr_addn_f.vhd" in Library proc_common_v3_00_a.
+Entity <cntr_incr_decr_addn_f> compiled.
+Entity <cntr_incr_decr_addn_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/dynshreg_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_f> compiled.
+Entity <dynshreg_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <counter_bit> compiled.
+Entity <counter_bit> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_muxcy_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy_f> compiled.
+Entity <or_muxcy_f> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_rbu_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu_f> compiled.
+Entity <srl_fifo_rbu_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/family.vhd" in Library proc_common_v3_00_a.
+Package <family> compiled.
+Package body <family> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter.vhd" in Library proc_common_v3_00_a.
+Entity <Counter> compiled.
+Entity <Counter> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/coregen_comp_defs.vhd" in Library proc_common_v3_00_a.
+Package <coregen_comp_defs> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/common_types_pkg.vhd" in Library proc_common_v3_00_a.
+Package <Common_Types> compiled.
+Package body <Common_Types> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/conv_funs_pkg.vhd" in Library proc_common_v3_00_a.
+Package <conv_funs_pkg> compiled.
+Package body <conv_funs_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/async_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <async_fifo_fg> compiled.
+Entity <async_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/sync_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <sync_fifo_fg> compiled.
+Entity <sync_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/basic_sfifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <basic_sfifo_fg> compiled.
+Entity <basic_sfifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/blk_mem_gen_wrapper.vhd" in Library proc_common_v3_00_a.
+Entity <blk_mem_gen_wrapper> compiled.
+Entity <blk_mem_gen_wrapper> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/addsub.vhd" in Library proc_common_v3_00_a.
+Entity <addsub> compiled.
+Entity <addsub> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/direct_path_cntr.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr> compiled.
+Entity <direct_path_cntr> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/direct_path_cntr_ai.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr_ai> compiled.
+Entity <direct_path_cntr_ai> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/down_counter.vhd" in Library proc_common_v3_00_a.
+Entity <down_counter> compiled.
+Entity <down_counter> (Architecture <simulation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/eval_timer.vhd" in Library proc_common_v3_00_a.
+Entity <eval_timer> compiled.
+Entity <eval_timer> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_steer.vhd" in Library proc_common_v3_00_a.
+Entity <IPIF_Steer> compiled.
+Entity <IPIF_Steer> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_steer128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_steer128> compiled.
+Entity <ipif_steer128> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_mirror128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_mirror128> compiled.
+Entity <ipif_mirror128> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ld_arith_reg.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg> compiled.
+Entity <ld_arith_reg> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ld_arith_reg2.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg2> compiled.
+Entity <ld_arith_reg2> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/mux_onehot.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot> compiled.
+Entity <mux_onehot> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_bits.vhd" in Library proc_common_v3_00_a.
+Entity <or_bits> compiled.
+Entity <or_bits> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect.vhd" in Library proc_common_v3_00_a.
+Entity <pselect> compiled.
+Entity <pselect> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect_mask.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_mask> compiled.
+Entity <pselect_mask> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <SRL_FIFO> compiled.
+Entity <SRL_FIFO> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo2.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo2> compiled.
+Entity <srl_fifo2> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo3.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo3> compiled.
+Entity <srl_fifo3> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_rbu.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu> compiled.
+Entity <srl_fifo_rbu> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/valid_be.vhd" in Library proc_common_v3_00_a.
+Entity <valid_be> compiled.
+Entity <valid_be> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_with_enable_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_with_enable_f> compiled.
+Entity <or_with_enable_f> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/dynshreg_i_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_i_f> compiled.
+Entity <dynshreg_i_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/mux_onehot_f.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot_f> compiled.
+Entity <mux_onehot_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_f> compiled.
+Entity <srl_fifo_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/compare_vectors_f.vhd" in Library proc_common_v3_00_a.
+Entity <compare_vectors_f> compiled.
+Entity <compare_vectors_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate_f> compiled.
+Entity <or_gate_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/soft_reset.vhd" in Library proc_common_v3_00_a.
+Entity <soft_reset> compiled.
+Entity <soft_reset> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/address_decoder.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <address_decoder> compiled.
+Entity <address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/slave_attachment.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <slave_attachment> compiled.
+Entity <slave_attachment> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/axi_lite_ipif.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <axi_lite_ipif> compiled.
+Entity <axi_lite_ipif> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/user_logic.vhd" in Library led_pwm_v1_00_a.
+Entity <user_logic> compiled.
+Entity <user_logic> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/pwm.vhd" in Library led_pwm_v1_01_a.
+Entity <pwm> compiled.
+Entity <pwm> (Architecture <Behavioral>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/clk_prescaler.vhd" in Library led_pwm_v1_01_a.
+Entity <clk_prescaler> compiled.
+Entity <clk_prescaler> (Architecture <Behavioral>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/led_pwm.vhd" in Library led_pwm_v1_00_a.
+Entity <led_pwm> compiled.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 284. Redeclaration of symbol led0.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 285. Redeclaration of symbol led1.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 286. Redeclaration of symbol led2.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 287. Redeclaration of symbol led3.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 288. Redeclaration of symbol led4.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 289. Redeclaration of symbol led5.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 290. Redeclaration of symbol led6.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 291. Redeclaration of symbol led7.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 292. Redeclaration of symbol led8.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 293. Redeclaration of symbol led9.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 294. Redeclaration of symbol led10.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 295. Redeclaration of symbol led11.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 296. Redeclaration of symbol led12.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 297. Redeclaration of symbol led13.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 298. Redeclaration of symbol led14.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 299. Redeclaration of symbol led15.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 300. Redeclaration of symbol led16.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 301. Redeclaration of symbol led17.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 302. Redeclaration of symbol led18.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 303. Redeclaration of symbol led19.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 304. Redeclaration of symbol led20.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 305. Redeclaration of symbol led21.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 306. Redeclaration of symbol led22.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 307. Redeclaration of symbol led23.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 308. Redeclaration of symbol led24.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 309. Redeclaration of symbol led25.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 310. Redeclaration of symbol led26.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 311. Redeclaration of symbol led27.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 312. Redeclaration of symbol led28.
+ERROR:HDLParsers:1202 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 313. Redeclaration of symbol led29.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 333. Formal port led0 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 334. Formal port led1 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 335. Formal port led2 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 336. Formal port led3 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 337. Formal port led4 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 338. Formal port led5 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 339. Formal port led6 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 340. Formal port led7 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 341. Formal port led8 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 342. Formal port led9 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 343. Formal port led10 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 344. Formal port led11 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 345. Formal port led12 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 346. Formal port led13 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 347. Formal port led14 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 348. Formal port led15 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 349. Formal port led16 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 350. Formal port led17 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 351. Formal port led18 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 352. Formal port led19 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 353. Formal port led20 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 354. Formal port led21 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 355. Formal port led22 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 356. Formal port led23 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 357. Formal port led24 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 358. Formal port led25 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 359. Formal port led26 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 360. Formal port led27 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 361. Formal port led28 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 362. Formal port led29 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:EDK:2121 - Parse Errors encountered in HDL source
+INFO:EDK:3186 - hierarchical library inclusion detected, all file(s) of library
+   proc_common_v3_00_a will be used ...
+INFO:EDK:3186 - hierarchical library inclusion detected, all file(s) of library
+   axi_lite_ipif_v1_01_a will be used ...
+Parsing PAO project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+HDL language for the peripheral (top level) design unit pwm is vhdl ...
+resolving hierarchical inclusion of library proc_common_v3_00_a in
+/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/ ...
+resolving hierarchical inclusion of library axi_lite_ipif_v1_01_a in
+/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/ ...
+INFO:EDK:3391 - Create temporary xst project file:
+   /home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm.pr
+   j
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/muxf_struct_f.vhd" in Library proc_common_v3_00_a.
+Entity <muxf_struct> compiled.
+Entity <muxf_struct> (Architecture <imp>) compiled.
+Entity <muxf_struct_f> compiled.
+Entity <muxf_struct_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/cntr_incr_decr_addn_f.vhd" in Library proc_common_v3_00_a.
+Entity <cntr_incr_decr_addn_f> compiled.
+Entity <cntr_incr_decr_addn_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/dynshreg_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_f> compiled.
+Entity <dynshreg_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <counter_bit> compiled.
+Entity <counter_bit> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_muxcy_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy_f> compiled.
+Entity <or_muxcy_f> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_rbu_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu_f> compiled.
+Entity <srl_fifo_rbu_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/family.vhd" in Library proc_common_v3_00_a.
+Package <family> compiled.
+Package body <family> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter.vhd" in Library proc_common_v3_00_a.
+Entity <Counter> compiled.
+Entity <Counter> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/coregen_comp_defs.vhd" in Library proc_common_v3_00_a.
+Package <coregen_comp_defs> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/common_types_pkg.vhd" in Library proc_common_v3_00_a.
+Package <Common_Types> compiled.
+Package body <Common_Types> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/conv_funs_pkg.vhd" in Library proc_common_v3_00_a.
+Package <conv_funs_pkg> compiled.
+Package body <conv_funs_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/async_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <async_fifo_fg> compiled.
+Entity <async_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/sync_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <sync_fifo_fg> compiled.
+Entity <sync_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/basic_sfifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <basic_sfifo_fg> compiled.
+Entity <basic_sfifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/blk_mem_gen_wrapper.vhd" in Library proc_common_v3_00_a.
+Entity <blk_mem_gen_wrapper> compiled.
+Entity <blk_mem_gen_wrapper> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/addsub.vhd" in Library proc_common_v3_00_a.
+Entity <addsub> compiled.
+Entity <addsub> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/direct_path_cntr.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr> compiled.
+Entity <direct_path_cntr> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/direct_path_cntr_ai.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr_ai> compiled.
+Entity <direct_path_cntr_ai> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/down_counter.vhd" in Library proc_common_v3_00_a.
+Entity <down_counter> compiled.
+Entity <down_counter> (Architecture <simulation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/eval_timer.vhd" in Library proc_common_v3_00_a.
+Entity <eval_timer> compiled.
+Entity <eval_timer> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_steer.vhd" in Library proc_common_v3_00_a.
+Entity <IPIF_Steer> compiled.
+Entity <IPIF_Steer> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_steer128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_steer128> compiled.
+Entity <ipif_steer128> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_mirror128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_mirror128> compiled.
+Entity <ipif_mirror128> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ld_arith_reg.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg> compiled.
+Entity <ld_arith_reg> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ld_arith_reg2.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg2> compiled.
+Entity <ld_arith_reg2> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/mux_onehot.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot> compiled.
+Entity <mux_onehot> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_bits.vhd" in Library proc_common_v3_00_a.
+Entity <or_bits> compiled.
+Entity <or_bits> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect.vhd" in Library proc_common_v3_00_a.
+Entity <pselect> compiled.
+Entity <pselect> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect_mask.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_mask> compiled.
+Entity <pselect_mask> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <SRL_FIFO> compiled.
+Entity <SRL_FIFO> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo2.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo2> compiled.
+Entity <srl_fifo2> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo3.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo3> compiled.
+Entity <srl_fifo3> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_rbu.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu> compiled.
+Entity <srl_fifo_rbu> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/valid_be.vhd" in Library proc_common_v3_00_a.
+Entity <valid_be> compiled.
+Entity <valid_be> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_with_enable_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_with_enable_f> compiled.
+Entity <or_with_enable_f> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/dynshreg_i_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_i_f> compiled.
+Entity <dynshreg_i_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/mux_onehot_f.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot_f> compiled.
+Entity <mux_onehot_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_f> compiled.
+Entity <srl_fifo_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/compare_vectors_f.vhd" in Library proc_common_v3_00_a.
+Entity <compare_vectors_f> compiled.
+Entity <compare_vectors_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate_f> compiled.
+Entity <or_gate_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/soft_reset.vhd" in Library proc_common_v3_00_a.
+Entity <soft_reset> compiled.
+Entity <soft_reset> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/address_decoder.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <address_decoder> compiled.
+Entity <address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/slave_attachment.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <slave_attachment> compiled.
+Entity <slave_attachment> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/axi_lite_ipif.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <axi_lite_ipif> compiled.
+Entity <axi_lite_ipif> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/user_logic.vhd" in Library led_pwm_v1_00_a.
+Entity <user_logic> compiled.
+Entity <user_logic> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/pwm.vhd" in Library led_pwm_v1_01_a.
+Entity <pwm> compiled.
+Entity <pwm> (Architecture <Behavioral>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/clk_prescaler.vhd" in Library led_pwm_v1_01_a.
+Entity <clk_prescaler> compiled.
+Entity <clk_prescaler> (Architecture <Behavioral>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/led_pwm.vhd" in Library led_pwm_v1_00_a.
+Entity <led_pwm> compiled.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 303. Formal port led0 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 304. Formal port led1 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 305. Formal port led2 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 306. Formal port led3 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 307. Formal port led4 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 308. Formal port led5 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 309. Formal port led6 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 310. Formal port led7 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 311. Formal port led8 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 312. Formal port led9 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 313. Formal port led10 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 314. Formal port led11 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 315. Formal port led12 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 316. Formal port led13 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 317. Formal port led14 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 318. Formal port led15 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 319. Formal port led16 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 320. Formal port led17 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 321. Formal port led18 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 322. Formal port led19 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 323. Formal port led20 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 324. Formal port led21 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 325. Formal port led22 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 326. Formal port led23 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 327. Formal port led24 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 328. Formal port led25 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 329. Formal port led26 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 330. Formal port led27 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 331. Formal port led28 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:HDLParsers:850 -
+   "/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v
+   1_00_a/hdl/vhdl/led_pwm.vhd" Line 332. Formal port led29 does not exist in
+   Entity 'axi_lite_ipif'.
+ERROR:EDK:2121 - Parse Errors encountered in HDL source
+INFO:EDK:3186 - hierarchical library inclusion detected, all file(s) of library
+   proc_common_v3_00_a will be used ...
+INFO:EDK:3186 - hierarchical library inclusion detected, all file(s) of library
+   axi_lite_ipif_v1_01_a will be used ...
+Parsing PAO project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+HDL language for the peripheral (top level) design unit pwm is vhdl ...
+resolving hierarchical inclusion of library proc_common_v3_00_a in
+/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/ ...
+resolving hierarchical inclusion of library axi_lite_ipif_v1_01_a in
+/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/ ...
+INFO:EDK:3391 - Create temporary xst project file:
+   /home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm.pr
+   j
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/muxf_struct_f.vhd" in Library proc_common_v3_00_a.
+Entity <muxf_struct> compiled.
+Entity <muxf_struct> (Architecture <imp>) compiled.
+Entity <muxf_struct_f> compiled.
+Entity <muxf_struct_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/cntr_incr_decr_addn_f.vhd" in Library proc_common_v3_00_a.
+Entity <cntr_incr_decr_addn_f> compiled.
+Entity <cntr_incr_decr_addn_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/dynshreg_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_f> compiled.
+Entity <dynshreg_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <counter_bit> compiled.
+Entity <counter_bit> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_muxcy_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy_f> compiled.
+Entity <or_muxcy_f> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_rbu_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu_f> compiled.
+Entity <srl_fifo_rbu_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/family.vhd" in Library proc_common_v3_00_a.
+Package <family> compiled.
+Package body <family> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter.vhd" in Library proc_common_v3_00_a.
+Entity <Counter> compiled.
+Entity <Counter> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/coregen_comp_defs.vhd" in Library proc_common_v3_00_a.
+Package <coregen_comp_defs> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/common_types_pkg.vhd" in Library proc_common_v3_00_a.
+Package <Common_Types> compiled.
+Package body <Common_Types> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/conv_funs_pkg.vhd" in Library proc_common_v3_00_a.
+Package <conv_funs_pkg> compiled.
+Package body <conv_funs_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/async_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <async_fifo_fg> compiled.
+Entity <async_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/sync_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <sync_fifo_fg> compiled.
+Entity <sync_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/basic_sfifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <basic_sfifo_fg> compiled.
+Entity <basic_sfifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/blk_mem_gen_wrapper.vhd" in Library proc_common_v3_00_a.
+Entity <blk_mem_gen_wrapper> compiled.
+Entity <blk_mem_gen_wrapper> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/addsub.vhd" in Library proc_common_v3_00_a.
+Entity <addsub> compiled.
+Entity <addsub> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/direct_path_cntr.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr> compiled.
+Entity <direct_path_cntr> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/direct_path_cntr_ai.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr_ai> compiled.
+Entity <direct_path_cntr_ai> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/down_counter.vhd" in Library proc_common_v3_00_a.
+Entity <down_counter> compiled.
+Entity <down_counter> (Architecture <simulation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/eval_timer.vhd" in Library proc_common_v3_00_a.
+Entity <eval_timer> compiled.
+Entity <eval_timer> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_steer.vhd" in Library proc_common_v3_00_a.
+Entity <IPIF_Steer> compiled.
+Entity <IPIF_Steer> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_steer128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_steer128> compiled.
+Entity <ipif_steer128> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_mirror128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_mirror128> compiled.
+Entity <ipif_mirror128> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ld_arith_reg.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg> compiled.
+Entity <ld_arith_reg> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ld_arith_reg2.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg2> compiled.
+Entity <ld_arith_reg2> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/mux_onehot.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot> compiled.
+Entity <mux_onehot> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_bits.vhd" in Library proc_common_v3_00_a.
+Entity <or_bits> compiled.
+Entity <or_bits> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect.vhd" in Library proc_common_v3_00_a.
+Entity <pselect> compiled.
+Entity <pselect> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect_mask.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_mask> compiled.
+Entity <pselect_mask> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <SRL_FIFO> compiled.
+Entity <SRL_FIFO> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo2.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo2> compiled.
+Entity <srl_fifo2> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo3.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo3> compiled.
+Entity <srl_fifo3> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_rbu.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu> compiled.
+Entity <srl_fifo_rbu> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/valid_be.vhd" in Library proc_common_v3_00_a.
+Entity <valid_be> compiled.
+Entity <valid_be> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_with_enable_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_with_enable_f> compiled.
+Entity <or_with_enable_f> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/dynshreg_i_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_i_f> compiled.
+Entity <dynshreg_i_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/mux_onehot_f.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot_f> compiled.
+Entity <mux_onehot_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/srl_fifo_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_f> compiled.
+Entity <srl_fifo_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/compare_vectors_f.vhd" in Library proc_common_v3_00_a.
+Entity <compare_vectors_f> compiled.
+Entity <compare_vectors_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/or_gate_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate_f> compiled.
+Entity <or_gate_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/soft_reset.vhd" in Library proc_common_v3_00_a.
+Entity <soft_reset> compiled.
+Entity <soft_reset> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/
+vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/address_decoder.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <address_decoder> compiled.
+Entity <address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/slave_attachment.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <slave_attachment> compiled.
+Entity <slave_attachment> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hd
+l/vhdl/axi_lite_ipif.vhd" in Library axi_lite_ipif_v1_01_a.
+Entity <axi_lite_ipif> compiled.
+Entity <axi_lite_ipif> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/user_logic.vhd" in Library led_pwm_v1_00_a.
+Entity <user_logic> compiled.
+Entity <user_logic> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/pwm.vhd" in Library led_pwm_v1_01_a.
+Entity <pwm> compiled.
+Entity <pwm> (Architecture <Behavioral>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/clk_prescaler.vhd" in Library led_pwm_v1_01_a.
+Entity <clk_prescaler> compiled.
+Entity <clk_prescaler> (Architecture <Behavioral>) compiled.
+Compiling vhdl file
+"/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_0
+0_a/hdl/vhdl/led_pwm.vhd" in Library led_pwm_v1_00_a.
+Entity <led_pwm> compiled.
+Entity <led_pwm> (Architecture <IMP>) compiled.
+
+
+Analyzing HDL attributes ...
+Entity name = led_pwm
+INFO:EDK:1607 - IPTYPE set to value : PERIPHERAL
+INFO:EDK:1511 - IMP_NETLIST set to value : TRUE
+INFO:EDK:1486 - HDL set to value : VHDL
+INFO:EDK:1631 - Infer bus clock [S_AXI_ACLK] for bus interface S_AXI ...
+Copying file user_logic.vhd to
+/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_00
+_a/hdl/vhdl/ ...
+Copying file led_pwm.vhd to
+/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_00
+_a/hdl/vhdl/ ...
+Copying file clk_prescaler.vhd to
+/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_01
+_a/hdl/vhdl/ ...
+Copying file pwm.vhd to
+/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_01
+_a/hdl/vhdl/ ...
+
+Thank you for using Create and Import Peripheral Wizard! Please find your
+imported peripheral under
+/home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_01
+_a.
+
+Summary:
+
+  Logical library     : led_pwm_v1_01_a
+  Version             : 1.01.a
+  Bus interface(s)    : S_AXI4LITE 
+
+The following sub-directories will be created:
+
+  - led_pwm_v1_01_a/data
+  - led_pwm_v1_01_a/hdl
+  - led_pwm_v1_01_a/hdl/verilog
+  - led_pwm_v1_01_a/hdl/vhdl
+  - led_pwm_v1_01_a/netlist
+
+
+The following HDL source files will be copied into the led_pwm_v1_01_a/hdl/vhdl
+directory:
+
+  - clk_prescaler.vhd
+  - pwm.vhd
+
+The following files will be created under the led_pwm_v1_01_a/data directory:
+
+  - led_pwm_v2_1_0.mpd
+  - led_pwm_v2_1_0.pao
+
+

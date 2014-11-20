@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          /home/vens/classes/Fall2014/cpre488/labs/final/Final/system/pcores/led_pwm_v1_00_a/data/led_pwm_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Wed Nov 19 18:26:09 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib led_pwm_v1_00_a user_logic vhdl
+lib led_pwm_v1_00_a led_pwm vhdl
