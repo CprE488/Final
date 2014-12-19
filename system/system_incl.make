@@ -67,12 +67,14 @@ implementation/system_btns_5bits_wrapper.ngc \
 implementation/system_processing_system7_0_wrapper.ngc \
 implementation/system_fmc_imageon_iic_0_wrapper.ngc \
 implementation/system_fmc_imageon_hdmi_out_0_wrapper.ngc \
-implementation/system_v_tc_vid_in_wrapper.ngc \
 implementation/system_v_vid_in_axi4s_0_wrapper.ngc \
 implementation/system_v_axi4s_vid_out_0_wrapper.ngc \
 implementation/system_axi_vdma_0_wrapper.ngc \
 implementation/system_axi_interconnect_1_wrapper.ngc \
-implementation/system_v_tc_vid_out_wrapper.ngc
+implementation/system_led_pwm_0_wrapper.ngc \
+implementation/system_fmc_imageon_hdmi_in_0_wrapper.ngc \
+implementation/system_v_tc_vid_in_0_wrapper.ngc \
+implementation/system_v_tc_vid_out_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

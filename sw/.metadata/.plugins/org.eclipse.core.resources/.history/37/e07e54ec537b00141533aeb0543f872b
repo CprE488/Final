@@ -1,0 +1,175 @@
+/*
+ * Copyright (c) 2009 Xilinx, Inc.  All rights reserved.
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ */
+
+/*
+ * helloworld.c: simple test application
+ */
+
+#include <stdio.h>
+
+#include "fmc_imageon_hdmi_framebuffer.h"
+#include "pwm.h"
+
+#define LED_PWM_REGISTER_ADDRESS 0x76600000
+
+fmc_imageon_hdmi_framebuffer_t frame;
+
+//typedef struct RGB_STRUCT
+//{
+//	unsigned char red;
+//	unsigned char green;
+//	unsigned char blue;
+//}rgb_color;
+
+typedef union
+{
+	struct YCBCR_STRUCT
+	{
+		unsigned char cb;
+		unsigned char y0;
+		unsigned char cr;
+		unsigned char y1;
+	}data;
+	Xuint32 value;
+}ycbcr_color;
+
+#define R_TO_Y  65.738/256
+#define G_TO_Y  129.057/256
+#define B_TO_Y  25.064/256
+#define R_TO_CB -37.945/256
+#define G_TO_CB -74.494/256
+#define B_TO_CB 112.439/256
+#define R_TO_CR 112.439/256
+#define G_TO_CR -94.154/256
+#define B_TO_CR -18.285/256
+#define Y_OFFSET 16
+#define CR_OFFSET 128
+#define CB_OFFSET 128
+
+#define Y_TO_R		298.082/256
+#define CR_TO_R		408.583/256
+#define R_OFFSET	-222.921
+#define Y_TO_G		298.082/256
+#define CB_TO_G		-100.291/256
+#define CR_TO_G		-208.120/256
+#define G_OFFSET	135.576
+#define Y_TO_B		298.082/256
+#define CB_TO_B		516.412/256
+#define B_OFFSET	-276.836
+
+void print( const char *str);
+
+void ambient_light_loop(fmc_imageon_hdmi_framebuffer_t *config, Pwm *pwm);
+
+inline rgb_color ycbcr_to_rgb(ycbcr_color pixel)
+{
+	rgb_color color;
+//	color.red = (unsigned char) Y_TO_R * pixel.data.y0 + CR_TO_R * pixel.data.cr + R_OFFSET;
+//	color.green = (unsigned char) Y_TO_G * pixel.data.y0 + CB_TO_G * pixel.data.cb + CR_TO_G * pixel.data.cr + G_OFFSET;
+//	color.blue = (unsigned char) Y_TO_B * pixel.data.y0 + CB_TO_B * pixel.data.cb + B_OFFSET;
+//1.59
+	color.red = (unsigned char) (1.596025944392623870454290647911*pixel.data.cr + 1.1643826270473349737996458353245*pixel.data.y0 - 222.92058710252648559055847895784);
+	color.green = (unsigned char) (1.1643826270473349242752893259399*pixel.data.y0 - 0.81297029871771590607200167606938*pixel.data.cr - 0.39176129346906180814419163527246*pixel.data.cb + 135.57552176715018863126811463672);
+	color.blue = (unsigned char) (2.0172349496412779735702115082657*pixel.data.cb + 1.1643826270473350116266570343734*pixel.data.y0 - 276.83596224693641286354268888981);
+
+//	color.data.y0 = (unsigned char)(R_TO_Y*pixel0.red + G_TO_Y*pixel0.green + B_TO_Y*pixel0.blue + Y_OFFSET);
+//	color.data.y1 = color.data.y0;//(unsigned char)(R_TO_Y*pixel1.red + G_TO_Y*pixel1.green + B_TO_Y*pixel1.blue + Y_OFFSET);
+//	color.data.cr = (unsigned char)(R_TO_CR*(pixel0.red) + G_TO_CR*(pixel0.green) + B_TO_CR*(pixel0.blue) + CR_OFFSET);
+//	color.data.cb = (unsigned char)(R_TO_CB*(pixel0.red) + G_TO_CB*(pixel0.green) + B_TO_CB*(pixel0.blue) + CB_OFFSET);
+
+	return color;
+}
+
+int main()
+{
+	Pwm pwm;
+    frame.uBaseAddr_IIC_FmcImageon = XPAR_FMC_IMAGEON_IIC_0_BASEADDR;
+    frame.uDeviceId_VTC_HdmiiDetector = XPAR_V_TC_VID_IN_0_DEVICE_ID;
+    frame.uDeviceId_VTC_HdmioGenerator = XPAR_V_TC_VID_OUT_0_DEVICE_ID;
+    frame.uDeviceId_VDMA_HdmiFrameBuffer = XPAR_AXI_VDMA_0_DEVICE_ID;
+    frame.uBaseAddr_MEM_HdmiFrameBuffer = XPAR_DDR_MEM_BASEADDR + 0x10000000;
+    frame.uNumFrames_HdmiFrameBuffer = XPAR_AXIVDMA_0_NUM_FSTORES;
+    fmc_imageon_hdmi_framebuffer_init( &frame );
+
+    PwmInitalize(&pwm, (void*)LED_PWM_REGISTER_ADDRESS, 0xFF);
+    PwmStart(&pwm, 256, 8);
+    
+    ambient_light_loop(&frame, &pwm);
+
+    return 0;
+}
+
+// Main (SW) processing loop. Recommended to have an explicit exit condition
+void ambient_light_loop(fmc_imageon_hdmi_framebuffer_t *config, Pwm* pwm)
+{
+	int i, j;
+	rgb_color current_pixel;
+	rgb_color leds[10];
+	Xuint32 parkptr;
+	Xuint32 vdma_S2MM_DMACR, vdma_MM2S_DMACR;
+
+	printf("Entering main SW processing loop\r\n");
+
+
+	// Grab the DMA parkptr, and update it to ensure that when parked, the S2MM side is on frame 0, and the MM2S side on frame 1
+	parkptr = XAxiVdma_ReadReg(config->vdma_hdmi.BaseAddr, XAXIVDMA_PARKPTR_OFFSET);
+	parkptr &= ~XAXIVDMA_PARKPTR_READREF_MASK;
+	parkptr &= ~XAXIVDMA_PARKPTR_WRTREF_MASK;
+	//parkptr |= 0x1;
+	XAxiVdma_WriteReg(config->vdma_hdmi.BaseAddr, XAXIVDMA_PARKPTR_OFFSET, parkptr);
+
+
+	// Grab the DMA Control Registers, and clear circular park mode.
+	vdma_MM2S_DMACR = XAxiVdma_ReadReg(config->vdma_hdmi.BaseAddr, XAXIVDMA_TX_OFFSET+XAXIVDMA_CR_OFFSET);
+	XAxiVdma_WriteReg(config->vdma_hdmi.BaseAddr, XAXIVDMA_TX_OFFSET+XAXIVDMA_CR_OFFSET, vdma_MM2S_DMACR & ~XAXIVDMA_CR_TAIL_EN_MASK);
+	vdma_S2MM_DMACR = XAxiVdma_ReadReg(config->vdma_hdmi.BaseAddr, XAXIVDMA_RX_OFFSET+XAXIVDMA_CR_OFFSET);
+	XAxiVdma_WriteReg(config->vdma_hdmi.BaseAddr, XAXIVDMA_RX_OFFSET+XAXIVDMA_CR_OFFSET, vdma_S2MM_DMACR & ~XAXIVDMA_CR_TAIL_EN_MASK);
+
+
+	// Pointers to the S2MM memory frame and M2SS memory frame
+	volatile ycbcr_color *video_data = (ycbcr_color *)XAxiVdma_ReadReg(config->vdma_hdmi.BaseAddr, XAXIVDMA_S2MM_ADDR_OFFSET+XAXIVDMA_START_ADDR_OFFSET);
+	volatile ycbcr_color *pMM2S_Mem = (ycbcr_color *)XAxiVdma_ReadReg(config->vdma_hdmi.BaseAddr, XAXIVDMA_MM2S_ADDR_OFFSET+XAXIVDMA_START_ADDR_OFFSET+4);
+
+	while(1)
+	{
+#define ROW (1080/2)
+#define COL (1920/4)
+#define ROWS (1080)
+#define COLS (1920/2)
+		current_pixel = ycbcr_to_rgb(video_data[ROW*COLS+COL]);
+		printf("Raw = %08X, Y0 = 0x%02X, Y1 = 0x%02X, Cr = 0x%02X, Cb = 0x%02X, Red = 0x%02X, Green = 0x%02X, Blue = 0x%02X\r",
+				video_data[1080/2*1920/2+1920/4].value,
+				video_data[1080/2*1920/2+1920/4].data.y0, video_data[1080/2*1920/2+1920/4].data.y1,
+				video_data[1080/2*1920/2+1920/4].data.cr, video_data[1080/2*1920/2+1920/4].data.cb,
+				current_pixel.red, current_pixel.green, current_pixel.blue);
+		current_pixel.red = 0;
+		current_pixel.green = 255;
+		current_pixel.blue = 0;
+		PwmSetLed(pwm, 0, &current_pixel);
+		for(i=0;i<1920*1080/2;i++)
+		{
+			//stupid loop that does NOTHING... but it doesn't work without it.
+			pMM2S_Mem[i].value = video_data[i].value; //
+		}
+	}
+
+	xil_printf("Main SW processing loop complete!\r\n");
+
+
+	return;
+}

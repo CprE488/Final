@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="19" version="2.0">
+<workbenchAdvisor/>
+<window height="1008" width="1690" x="0" y="22">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="280" y="30"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="204" y="30"/>
+<coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="com.xilinx.sdk.xbash.toolbar1" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="com.xilinx.sdk.targetmanager.ui.toolbar1" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="com.xilinx.sdk.sw.toolbar1" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="96" y="30"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1417484930835" focus="true" label="Workspace - C/C++">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="fmc_imageon_hdmi_framebuffer.h" partName="fmc_imageon_hdmi_framebuffer.h" path="/home/vens/classes/Fall2014/cpre488/labs/final/Final/sw/fmc_imageon_framebuffer/src/fmc_imageon_hdmi_framebuffer.h" title="fmc_imageon_hdmi_framebuffer.h" tooltip="fmc_imageon_framebuffer/src/fmc_imageon_hdmi_framebuffer.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fmc_imageon_framebuffer/src/fmc_imageon_hdmi_framebuffer.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="2410" selectionTopPixel="386"/>
+</editor>
+<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="/home/vens/classes/Fall2014/cpre488/labs/final/Final/sw/final_bsp/system.mss" title="system.mss" tooltip="final_bsp/system.mss" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/final_bsp/system.mss"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="/home/vens/classes/Fall2014/cpre488/labs/final/Final/sw/fmc_imageon_framebuffer/src/main.c" title="main.c" tooltip="fmc_imageon_framebuffer/src/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fmc_imageon_framebuffer/src/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8557" selectionTopPixel="2658"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="fmc_imageon_hdmi_framebuffer.c" partName="fmc_imageon_hdmi_framebuffer.c" path="/home/vens/classes/Fall2014/cpre488/labs/final/Final/sw/fmc_imageon_framebuffer/src/fmc_imageon_hdmi_framebuffer.c" title="fmc_imageon_hdmi_framebuffer.c" tooltip="fmc_imageon_framebuffer/src/fmc_imageon_hdmi_framebuffer.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fmc_imageon_framebuffer/src/fmc_imageon_hdmi_framebuffer.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="8369" selectionTopPixel="3241"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="video_frame_buffer.c" partName="video_frame_buffer.c" path="/home/vens/classes/Fall2014/cpre488/labs/final/Final/sw/fmc_imageon_framebuffer/src/video_frame_buffer.c" title="video_frame_buffer.c" tooltip="fmc_imageon_framebuffer/src/video_frame_buffer.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fmc_imageon_framebuffer/src/video_frame_buffer.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="13713" selectionTopPixel="4628"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xaxivdma.c" partName="xaxivdma.c" path="/home/vens/classes/Fall2014/cpre488/labs/final/Final/sw/final_bsp/ps7_cortexa9_0/libsrc/axivdma_v4_05_a/src/xaxivdma.c" title="xaxivdma.c" tooltip="final_bsp/ps7_cortexa9_0/libsrc/axivdma_v4_05_a/src/xaxivdma.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/final_bsp/ps7_cortexa9_0/libsrc/axivdma_v4_05_a/src/xaxivdma.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="31585" selectionTopPixel="12909"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xaxivdma_channel.c" partName="xaxivdma_channel.c" path="/home/vens/classes/Fall2014/cpre488/labs/final/Final/sw/final_bsp/ps7_cortexa9_0/libsrc/axivdma_v4_05_a/src/xaxivdma_channel.c" title="xaxivdma_channel.c" tooltip="final_bsp/ps7_cortexa9_0/libsrc/axivdma_v4_05_a/src/xaxivdma_channel.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/final_bsp/ps7_cortexa9_0/libsrc/axivdma_v4_05_a/src/xaxivdma_channel.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="21" selectionOffset="27480" selectionTopPixel="10972"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="video_detector.c" partName="video_detector.c" path="/home/vens/classes/Fall2014/cpre488/labs/final/Final/sw/fmc_imageon_framebuffer/src/video_detector.c" title="video_detector.c" tooltip="fmc_imageon_framebuffer/src/video_detector.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fmc_imageon_framebuffer/src/video_detector.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="27" selectionOffset="1680" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="fmc_imageon.c" partName="fmc_imageon.c" path="/home/vens/classes/Fall2014/cpre488/labs/final/Final/sw/final_bsp/ps7_cortexa9_0/libsrc/fmc_imageon_sw_v1_06_a/src/fmc_imageon.c" title="fmc_imageon.c" tooltip="final_bsp/ps7_cortexa9_0/libsrc/fmc_imageon_sw_v1_06_a/src/fmc_imageon.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/final_bsp/ps7_cortexa9_0/libsrc/fmc_imageon_sw_v1_06_a/src/fmc_imageon.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="54477" selectionTopPixel="5989"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xaxivdma_hw.h" partName="xaxivdma_hw.h" path="/home/vens/classes/Fall2014/cpre488/labs/final/Final/sw/final_bsp/ps7_cortexa9_0/include/xaxivdma_hw.h" title="xaxivdma_hw.h" tooltip="final_bsp/ps7_cortexa9_0/include/xaxivdma_hw.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/final_bsp/ps7_cortexa9_0/include/xaxivdma_hw.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="26" selectionOffset="7206" selectionTopPixel="1235"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="pwm.c" partName="pwm.c" path="/home/vens/classes/Fall2014/cpre488/labs/final/Final/sw/fmc_imageon_framebuffer/src/pwm.c" title="pwm.c" tooltip="fmc_imageon_framebuffer/src/pwm.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fmc_imageon_framebuffer/src/pwm.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5462" selectionTopPixel="1053"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pwm.h" partName="pwm.h" path="/home/vens/classes/Fall2014/cpre488/labs/final/Final/sw/fmc_imageon_framebuffer/src/pwm.h" title="pwm.h" tooltip="fmc_imageon_framebuffer/src/pwm.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fmc_imageon_framebuffer/src/pwm.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1423" selectionTopPixel="0"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
+</viewState>
+</view>
+<view id="org.eclipse.cdt.ui.callHierarchy" partName="Call Hierarchy">
+<viewState showFilesInLabels="false" variableFilter="false"/>
+</view>
+<view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (2 items)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="811" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.SearchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.make.ui.makeTargetActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.buildConfigActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.NavigationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.OpenActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CodingActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.ui.CView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.tm.terminal.view.TerminalView"/>
+<show_view_action id="org.eclipse.cdt.codan.internal.ui.views.ProblemDetails"/>
+<show_view_action id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.cdt.ui.includeBrowser"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewHeaderFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="com.xilinx.sdk.appwiz.AppWizard"/>
+<new_wizard_action id="com.xilinx.sdk.sw.ui.NewBspWizard"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.tm.terminal.view.TerminalView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
+<view id="org.eclipse.cdt.ui.callHierarchy"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4cfa88fb" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.28040743" ratioLeft="468" ratioRight="1201" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.81828314" ratioLeft="734" ratioRight="163" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.tm.terminal.view.TerminalView" label="Terminal"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
+<page content="org.eclipse.cdt.ui.callHierarchy" label="Call Hierarchy"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fmc_imageon_framebuffer/src/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fmc_imageon_framebuffer/src/pwm.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fmc_imageon_framebuffer/src/pwm.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fmc_imageon_framebuffer/src/fmc_imageon_hdmi_framebuffer.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/final_bsp/ps7_cortexa9_0/libsrc/fmc_imageon_sw_v1_06_a/src/fmc_imageon.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fmc_imageon_framebuffer/src/fmc_imageon_hdmi_framebuffer.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fmc_imageon_framebuffer/src/pwm.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fmc_imageon_framebuffer/src/pwm.h"/>
+</editors>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6192" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6221" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6162" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6144" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6192" y="0"/>
+</item>
+<item historyLabel="pwm.c" index="1">
+<position info="not_deleted" x="5135" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="3738" y="0"/>
+</item>
+<item historyLabel="pwm.c" index="1">
+<position info="not_deleted" x="5650" y="0"/>
+</item>
+<item historyLabel="fmc_imageon_hdmi_framebuffer.h" index="3">
+<position info="not_deleted" x="2410" y="18"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="3738" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6269" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6348" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6361" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6374" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="8021" y="0"/>
+</item>
+<item historyLabel="pwm.h" index="2">
+<position info="not_deleted" x="1880" y="62"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="8021" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="8483" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1068" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="9788" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="9516" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="9594" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="9681" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="9768" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="10494" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="9999" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="11930" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="11949" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1396" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="10474" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="10533" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="10748" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="11259" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="11880" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="11458" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="11656" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="11655" y="0"/>
+</item>
+<item historyLabel="fmc_imageon.c" index="4">
+<position info="not_deleted" x="54477" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1610" y="0"/>
+</item>
+<item historyLabel="fmc_imageon_hdmi_framebuffer.c" index="5">
+<position info="not_deleted" x="8369" y="7"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1632" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="8234" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="8286" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="8397" y="0"/>
+</item>
+<item historyLabel="pwm.c" index="6">
+<position info="not_deleted" x="5650" y="0"/>
+</item>
+<item historyLabel="pwm.h" index="7">
+<position info="not_deleted" x="1423" y="0"/>
+</item>
+<item active="true" historyLabel="pwm.c" index="6">
+<position info="not_deleted" x="5650" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pwm.h" tooltip="fmc_imageon_framebuffer/src/pwm.h">
+<persistable path="/fmc_imageon_framebuffer/src/pwm.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pwm.c" tooltip="fmc_imageon_framebuffer/src/pwm.c">
+<persistable path="/fmc_imageon_framebuffer/src/pwm.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xaxivdma_hw.h" tooltip="final_bsp/ps7_cortexa9_0/include/xaxivdma_hw.h">
+<persistable path="/final_bsp/ps7_cortexa9_0/include/xaxivdma_hw.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="fmc_imageon.c" tooltip="final_bsp/ps7_cortexa9_0/libsrc/fmc_imageon_sw_v1_06_a/src/fmc_imageon.c">
+<persistable path="/final_bsp/ps7_cortexa9_0/libsrc/fmc_imageon_sw_v1_06_a/src/fmc_imageon.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="video_detector.c" tooltip="fmc_imageon_framebuffer/src/video_detector.c">
+<persistable path="/fmc_imageon_framebuffer/src/video_detector.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xaxivdma_channel.c" tooltip="final_bsp/ps7_cortexa9_0/libsrc/axivdma_v4_05_a/src/xaxivdma_channel.c">
+<persistable path="/final_bsp/ps7_cortexa9_0/libsrc/axivdma_v4_05_a/src/xaxivdma_channel.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xaxivdma.c" tooltip="final_bsp/ps7_cortexa9_0/libsrc/axivdma_v4_05_a/src/xaxivdma.c">
+<persistable path="/final_bsp/ps7_cortexa9_0/libsrc/axivdma_v4_05_a/src/xaxivdma.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="video_frame_buffer.c" tooltip="fmc_imageon_framebuffer/src/video_frame_buffer.c">
+<persistable path="/fmc_imageon_framebuffer/src/video_frame_buffer.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="fmc_imageon_hdmi_framebuffer.c" tooltip="fmc_imageon_framebuffer/src/fmc_imageon_hdmi_framebuffer.c">
+<persistable path="/fmc_imageon_framebuffer/src/fmc_imageon_hdmi_framebuffer.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="fmc_imageon_framebuffer/src/main.c">
+<persistable path="/fmc_imageon_framebuffer/src/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="final_bsp/system.mss">
+<persistable path="/final_bsp/system.mss"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="fmc_imageon_hdmi_framebuffer.h" tooltip="fmc_imageon_framebuffer/src/fmc_imageon_hdmi_framebuffer.h">
+<persistable path="/fmc_imageon_framebuffer/src/fmc_imageon_hdmi_framebuffer.h"/>
+</file>
+</mruList>
+</workbench>

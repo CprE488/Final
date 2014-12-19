@@ -1,0 +1,130 @@
+/*
+ * Copyright (c) 2009 Xilinx, Inc.  All rights reserved.
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ */
+
+/*
+ * helloworld.c: simple test application
+ */
+
+#include <stdio.h>
+
+#include "fmc_imageon_hdmi_framebuffer.h"
+
+fmc_imageon_hdmi_framebuffer_t frame;
+
+typedef struct RGB_STRUCT
+{
+	unsigned char red;
+	unsigned char green;
+	unsigned char blue;
+}rgb_color;
+
+typedef union
+{
+	struct YCBCR_STRUCT
+	{
+		unsigned char y0;
+		unsigned char cb;
+		unsigned char y1;
+		unsigned char cr;
+	}data;
+	Xuint32 value;
+}ycbcr_color;
+
+#define R_TO_Y  65.738/256
+#define G_TO_Y  129.057/256
+#define B_TO_Y  25.064/256
+#define R_TO_CB -37.945/256
+#define G_TO_CB -74.494/256
+#define B_TO_CB 112.439/256
+#define R_TO_CR 112.439/256
+#define G_TO_CR -94.154/256
+#define B_TO_CR -18.285/256
+#define Y_OFFSET 16
+#define CR_OFFSET 128
+#define CB_OFFSET 128
+
+#define Y_TO_R		298.082/256
+#define CR_TO_R		408.583/256
+#define R_OFFSET	-222.921
+#define Y_TO_G		298.082/256
+#define CB_TO_G		-100.291/256
+#define CR_TO_G		-208.120/256
+#define G_OFFSET	135.576
+#define Y_TO_B		298.082/256
+#define CB_TO_B		516.412/256
+#define B_OFFSET	-276.836
+
+void print( const char *str);
+
+void ambient_light_loop(fmc_imageon_hdmi_framebuffer_t *config);
+
+inline rgb_color ycbcr_to_rgb(ycbcr_color pixel)
+{
+	rgb_color color;
+	color.red = (unsigned char) Y_TO_R * pixel.data.y0 + CR_TO_R * pixel.data.cr + R_OFFSET;
+	color.green = (unsigned char) Y_TO_G * pixel.data.y0 + CB_TO_G * pixel.data.cb + CR_TO_G * pixel.data.cr + G_OFFSET;
+	color.blue = (unsigned char) Y_TO_B * pixel.data.y0 + CB_TO_B * pixel.cata.cb + B_OFFSET;
+	return color;
+}
+
+int main()
+{
+    frame.uBaseAddr_IIC_FmcImageon = XPAR_FMC_IMAGEON_IIC_0_BASEADDR;
+    frame.uDeviceId_VTC_HdmiiDetector = XPAR_V_TC_VID_IN_0_DEVICE_ID;
+    frame.uDeviceId_VTC_HdmioGenerator = XPAR_V_TC_VID_OUT_0_DEVICE_ID;
+    frame.uDeviceId_VDMA_HdmiFrameBuffer = XPAR_AXI_VDMA_0_DEVICE_ID;
+    frame.uBaseAddr_MEM_HdmiFrameBuffer = XPAR_DDR_MEM_BASEADDR + 0x10000000;
+    frame.uNumFrames_HdmiFrameBuffer = XPAR_AXIVDMA_0_NUM_FSTORES;
+    fmc_imageon_hdmi_framebuffer_init( &frame );
+
+    ambient_light_loop(&frame);
+
+    return 0;
+}
+
+// Main (SW) processing loop. Recommended to have an explicit exit condition
+void ambient_light_loop(fmc_imageon_hdmi_framebuffer_t *config)
+{
+	int i, j;
+	rgb_color current_pixel;
+
+	printf("Entering main SW processing loop\r\n");
+
+	// Pointers to the S2MM memory frame and M2SS memory frame
+	volatile ycbcr_color video_data[1920][1080] = (ycbcr_color *)XAxiVdma_ReadReg(config->vdma_hdmi.BaseAddr, XAXIVDMA_S2MM_ADDR_OFFSET+XAXIVDMA_START_ADDR_OFFSET);
+
+	while(1)
+	{
+		current_pixel = ycbcr_to_rgb(video_data[1080/2][1920/2]);
+		printf("Red = 0x%02X, Green = 0x%02X, Blue = 0x%02X\r", current_pixel.red, current_pixel.green, current_pixel.blue);
+		usleep(500000);
+	}
+
+	// Run for 1000 frames before going back to HW mode
+	for (j = 0; j < 100; j++) {
+		for (i = 0; i < 1920*1080; i++) {
+			pMM2S_Mem[i] = pS2MM_Mem[i]; //pS2MM_Mem[1920*1080-i-1];//
+		}
+	}
+
+
+	xil_printf("Main SW processing loop complete!\r\n");
+
+
+	return;
+}

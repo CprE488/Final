@@ -1,0 +1,167 @@
+/**
+AUTHORS:
+       _ ______ _____            __  __ _____ ______  __      ________ _   _  _____ 
+      | |  ____|  __ \     /\   |  \/  |_   _|  ____| \ \    / /  ____| \ | |/ ____|
+      | | |__  | |__) |   /  \  | \  / | | | | |__     \ \  / /| |__  |  \| | (___  
+  _   | |  __| |  _  /   / /\ \ | |\/| | | | |  __|     \ \/ / |  __| | . ` |\___ \ 
+ | |__| | |____| | \ \  / ____ \| |  | |_| |_| |____     \  /  | |____| |\  |____) |
+  \____/|______|_|  \_\/_/    \_\_|  |_|_____|______|     \/   |______|_| \_|_____/ 
+
+           _____          __  __    _____ _    _ _   _ _____  ______ _____  __  __          _   _ 
+     /\   |  __ \   /\   |  \/  |  / ____| |  | | \ | |  __ \|  ____|  __ \|  \/  |   /\   | \ | |
+    /  \  | |  | | /  \  | \  / | | (___ | |  | |  \| | |  | | |__  | |__) | \  / |  /  \  |  \| |
+   / /\ \ | |  | |/ /\ \ | |\/| |  \___ \| |  | | . ` | |  | |  __| |  _  /| |\/| | / /\ \ | . ` |
+  / ____ \| |__| / ____ \| |  | |  ____) | |__| | |\  | |__| | |____| | \ \| |  | |/ ____ \| |\  |
+ /_/    \_\_____/_/    \_\_|  |_| |_____/ \____/|_| \_|_____/|______|_|  \_\_|  |_/_/    \_\_| \_|
+*/
+
+
+/*
+### #     #  #####  #       #     # ######  #######  #####  
+ #  ##    # #     # #       #     # #     # #       #     # 
+ #  # #   # #       #       #     # #     # #       #       
+ #  #  #  # #       #       #     # #     # #####    #####  
+ #  #   # # #       #       #     # #     # #             # 
+ #  #    ## #     # #       #     # #     # #       #     # 
+### #     #  #####  #######  #####  ######  #######  ##### 
+*/
+
+#include "pwm.h"
+
+/*
+######  ####### ####### ### #     # ### ####### ### ####### #     #  #####  
+#     # #       #        #  ##    #  #     #     #  #     # ##    # #     # 
+#     # #       #        #  # #   #  #     #     #  #     # # #   # #       
+#     # #####   #####    #  #  #  #  #     #     #  #     # #  #  #  #####  
+#     # #       #        #  #   # #  #     #     #  #     # #   # #       # 
+#     # #       #        #  #    ##  #     #     #  #     # #    ## #     # 
+######  ####### #       ### #     # ###    #    ### ####### #     #  #####  
+*/
+
+#define SCALE(x, in, out) 	(x*out/in)
+#define debug(flag, string, ...) flag ? printf(string, ...) :
+
+/*
+####### #     # ######  #######       ######  ####### #######  #####  
+   #     #   #  #     # #             #     # #       #       #     # 
+   #      # #   #     # #             #     # #       #       #       
+   #       #    ######  #####         #     # #####   #####    #####  
+   #       #    #       #             #     # #       #             # 
+   #       #    #       #             #     # #       #       #     # 
+   #       #    #       #######       ######  ####### #        ##### 
+*/
+
+typedef struct __attribute__((__packed__)) PWM_REG_STRUCT
+{
+	union 
+	{
+		uint32_t Control;
+		struct LED_PWM_CONTROL_STRUCT
+		{
+			unsigned Enable				: 1;
+			unsigned Reset				: 1;
+			unsigned Prescaller			: 5;
+			unsigned Dummy				: 25;
+		}ControlBits;
+	};
+	uint32_t Top;
+	uint32_t DutyCycle[30];
+}PwmReg;
+
+/*
+####### #     # #     #  #####  ####### ### ####### #     #  #####  
+#       #     # ##    # #     #    #     #  #     # ##    # #     # 
+#       #     # # #   # #          #     #  #     # # #   # #       
+#####   #     # #  #  # #          #     #  #     # #  #  #  #####  
+#       #     # #   # # #          #     #  #     # #   # #       # 
+#       #     # #    ## #     #    #     #  #     # #    ## #     # 
+#        #####  #     #  #####     #    ### ####### #     #  #####  
+*/
+
+void PwmInitalize(Pwm* pwm, void * pwm_address, uint8_t debug_flags)
+{
+	memset(pwm, sizeof(Pwm), 0);
+	pwm->PwmRegister = pwm_address;
+	pwm->DebugFlags.init = (debug_flags & PWM_DEBUG_INIT) ? 1 : 0;
+	pwm->DebugFlags.enable = (debug_flags & PWM_DEBUG_ENABLE) ? 1 : 0;
+	pwm->DebugFlags.reset = (debug_flags & PWM_DEBUG_RESET) ? 1 : 0;
+	pwm->DebugFlags.prescaller = (debug_flags & PWM_DEBUG_PRESCALLER) ? 1 : 0;
+	pwm->DebugFlags.color = (debug_flags & PWM_DEBUG_COLOR) ? 1 : 0;
+	debug(pwm->DebugFlags.init, "\nInitializing PWM module\n");
+	debug(pwm->DebugFlags.init, "\tClear Registers\n");
+	memset(pwm->PwmRegister, sizeof(PwmReg), 0);
+	debug(pwm->DebugFlags.init, "Finished\n");
+	return;
+}
+
+void PwmStart(Pwm* pwm, uint32_t top, uint8_t prescaller)
+{
+	struct PWM_DEBUG_STRUCT tmp = pwm->DebugFlags;
+	pwm->DebugFlags.enable = 0;
+	pwm->DebugFlags.reset = 0;
+	pwm->DebugFlags.prescaller = 0;
+	debug(pwm->DebugFlags.init, "\nStarting PWM Module\n");
+	debug(pwm->DebugFlags.init, "\tReseting State Machine\n");
+	PwmReset(pwm);
+	debug(pwm->DebugFlags.init, "\tSet Top to %d", top);
+	PwmSetTop(pwm, top);
+	debug(pwm->DebugFlags.init, "\tSet Prescaller to %d\n", prescaller);
+	PwmSetPrescaller(pwm, prescaller);
+	debug(pwm->DebugFlags.init, "\tEnable PWM\n");
+	PwmEnable(pwm);
+	debug(pwm->DebugFlags.init, "Finished\n");
+	pwm->DebugFlags = tmp;
+	return;
+}
+
+void PwmSetLed(Pwm* pwm, uint8_t led_number, Led* led_color)
+{
+	uint8_t base_dc = (led_number * 3);
+	debug(pwm->DebugFlags.color, "Setting LED %d to: R=%d, G=%d, B=%d", led_number, led_color->red, led_color->green, led_color->blue);
+	pwm->PwmRegister->DutyCycle[base_dc]     = SCALE(led_color->red, 255, pwm->PwmRegister->Top);
+	pwm->PwmRegister->DutyCycle[base_dc + 1] = SCALE(led_color->green, 255, pwm->PwmRegister->Top);
+	pwm->PwmRegister->DutyCycle[base_dc + 2] = SCALE(led_color->blue, 255, pwm->PwmRegister->Top);
+	return;
+}
+
+void PwmSetLedColor(Pwm* pwm, uint8_t led_number, uint8_t red, uint8_t green, uint8_t blue)
+{
+	Led led =
+	{
+		.red = red,
+		.green = green,
+		.blue = blue
+	};
+	PwmSetLed(pwm, led_number, &led);
+	return;
+}
+
+void PwmReset(Pwm* pwm)
+{
+	debug(pwm->DebugFlags.reset, "Reseting PWM Module\n");
+	pwm->PwmRegister->ControlBits.Reset = 1;
+	usleep(1);
+	pwm->PwmRegister->ControlBits.Reset = 0;
+	return;
+}
+
+void PwmEnable(Pwm* pwm)
+{
+	debug(pwm->DebugFlags.enable, "Enabling PWM Module\n");
+	pwm->PwmRegister->ControlBits.Enable = 1;
+	return;
+}
+
+void PwmDisable(Pwm* pwm)
+{
+	debug(pwm->DebugFlags.enable, "Disabling PWM Module\n");
+	pwm->PwmRegister->ControlBits.Enable = 0;
+	return;
+}
+
+void PwmSetPrescaller(Pwm* pwm,uint8_t prescaller)
+{
+	debug(pwm->DebugFlags.prescaller, "Setting Prescaller to %d\n", prescaller);
+	pwm->PwmRegister->ControlBits.Prescaller = prescaller;
+	return;
+}

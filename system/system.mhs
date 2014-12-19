@@ -35,12 +35,46 @@
  PORT processing_system7_0_DDR_DQS_n = processing_system7_0_DDR_DQS_n, DIR = IO, VEC = [3:0]
  PORT processing_system7_0_DDR_VRN = processing_system7_0_DDR_VRN, DIR = IO
  PORT processing_system7_0_DDR_VRP = processing_system7_0_DDR_VRP, DIR = IO
- PORT fmc_imageon_iic_0_Reset_pin = fmc_imageon_iic_0_Gpo, DIR = O
  PORT fmc_imageon_iic_0_Sda_pin = fmc_imageon_iic_0_Sda, DIR = IO
  PORT fmc_imageon_iic_0_Scl_pin = fmc_imageon_iic_0_Scl, DIR = IO
  PORT fmc_imageon_hdmi_out_0_io_hdmio_spdif_pin = fmc_imageon_hdmi_out_0_io_hdmio_spdif, DIR = O
  PORT fmc_imageon_hdmi_out_0_io_hdmio_video_pin = fmc_imageon_hdmi_out_0_io_hdmio_video, DIR = O, VEC = [15:0]
  PORT fmc_imageon_hdmi_out_0_io_hdmio_clk_pin = fmc_imageon_hdmi_out_0_io_hdmio_clk, DIR = O
+ PORT fmc_imageon_hdmi_in_0_io_hdmii_spdif_pin = net_fmc_imageon_hdmi_in_0_io_hdmii_spdif_pin, DIR = I
+ PORT fmc_imageon_hdmi_in_0_io_hdmii_video_pin = net_fmc_imageon_hdmi_in_0_io_hdmii_video_pin, DIR = I, VEC = [15:0]
+ PORT fmc_imageon_hdmi_in_0_clk_pin = net_fmc_imageon_hdmi_in_0_clk_pin, DIR = I, SIGIS = CLK, CLK_FREQ = 148500000
+ PORT fmc_imageon_video_clk1_pin = fmc_imageon_video_clk1, DIR = I, SIGIS = CLK, CLK_FREQ = 148500000
+ PORT led0 = led_pwm_0_led0, DIR = O
+ PORT led1 = led_pwm_0_led1, DIR = O
+ PORT led2 = led_pwm_0_led2, DIR = O
+ PORT led3 = led_pwm_0_led3, DIR = O
+ PORT led4 = led_pwm_0_led4, DIR = O
+ PORT led5 = led_pwm_0_led5, DIR = O
+ PORT led6 = led_pwm_0_led6, DIR = O
+ PORT led7 = led_pwm_0_led7, DIR = O
+ PORT led8 = led_pwm_0_led8, DIR = O
+ PORT led9 = led_pwm_0_led9, DIR = O
+ PORT led10 = led_pwm_0_led10, DIR = O
+ PORT led11 = led_pwm_0_led11, DIR = O
+ PORT led12 = led_pwm_0_led12, DIR = O
+ PORT led13 = led_pwm_0_led13, DIR = O
+ PORT led14 = led_pwm_0_led14, DIR = O
+ PORT led15 = led_pwm_0_led15, DIR = O
+ PORT led16 = led_pwm_0_led16, DIR = O
+ PORT led17 = led_pwm_0_led17, DIR = O
+ PORT led18 = led_pwm_0_led18, DIR = O
+ PORT led19 = led_pwm_0_led19, DIR = O
+ PORT led20 = led_pwm_0_led20, DIR = O
+ PORT led21 = led_pwm_0_led21, DIR = O
+ PORT led22 = led_pwm_0_led22, DIR = O
+ PORT led23 = led_pwm_0_led23, DIR = O
+ PORT led24 = led_pwm_0_led24, DIR = O
+ PORT led25 = led_pwm_0_led25, DIR = O
+ PORT led26 = led_pwm_0_led26, DIR = O
+ PORT led27 = led_pwm_0_led27, DIR = O
+ PORT led28 = led_pwm_0_led28, DIR = O
+ PORT led29 = led_pwm_0_led29, DIR = O
+ PORT fmc_imageon_iic_0_Reset_pin = fmc_imageon_iic_0_Gpo, DIR = O, SIGIS = NONE
 
 
 BEGIN axi_interconnect
@@ -153,7 +187,7 @@ BEGIN processing_system7
  PARAMETER C_FCLK_CLK2_FREQ = 50000000
  PARAMETER C_FCLK_CLK3_FREQ = 50000000
  PARAMETER C_USE_S_AXI_HP0 = 1
- PARAMETER C_INTERCONNECT_S_AXI_HP0_MASTERS = axi_vdma_0.M_AXI_S2MM
+ PARAMETER C_INTERCONNECT_S_AXI_HP0_MASTERS = axi_vdma_0.M_AXI_MM2S & axi_vdma_0.M_AXI_S2MM
  BUS_INTERFACE M_AXI_GP0 = axi4lite_0
  BUS_INTERFACE S_AXI_HP0 = axi_interconnect_1
  PORT MIO = processing_system7_0_MIO
@@ -180,7 +214,8 @@ BEGIN processing_system7
  PORT FCLK_CLK0 = processing_system7_0_FCLK_CLK0
  PORT FCLK_RESET0_N = processing_system7_0_FCLK_RESET0_N_0
  PORT M_AXI_GP0_ACLK = processing_system7_0_FCLK_CLK0
- PORT S_AXI_HP0_ACLK = processing_system7_0_FCLK_CLK0
+ PORT S_AXI_HP0_ACLK = processing_system7_0_FCLK_CLK1
+ PORT FCLK_CLK1 = processing_system7_0_FCLK_CLK1
 END
 
 BEGIN axi_iic
@@ -188,36 +223,28 @@ BEGIN axi_iic
  PARAMETER HW_VER = 1.02.a
  PARAMETER C_BASEADDR = 0x41600000
  PARAMETER C_HIGHADDR = 0x4160ffff
+ PARAMETER C_GPO_WIDTH = 1
  BUS_INTERFACE S_AXI = axi4lite_0
  PORT S_AXI_ACLK = processing_system7_0_FCLK_CLK0
- PORT Gpo = fmc_imageon_iic_0_Gpo
  PORT Sda = fmc_imageon_iic_0_Sda
  PORT Scl = fmc_imageon_iic_0_Scl
+ PORT Gpo = fmc_imageon_iic_0_Gpo
 END
 
 BEGIN fmc_imageon_hdmi_out
  PARAMETER INSTANCE = fmc_imageon_hdmi_out_0
  PARAMETER HW_VER = 1.05.a
- BUS_INTERFACE XSVI_VIDEO_IN = v_tc_vid_out_VTIMING_OUT
  PORT io_hdmio_spdif = fmc_imageon_hdmi_out_0_io_hdmio_spdif
  PORT io_hdmio_video = fmc_imageon_hdmi_out_0_io_hdmio_video
  PORT io_hdmio_clk = fmc_imageon_hdmi_out_0_io_hdmio_clk
  PORT reset = net_gnd
  PORT oe = net_vcc
  PORT embed_syncs = net_vcc
-END
-
-BEGIN v_tc
- PARAMETER INSTANCE = v_tc_vid_in
- PARAMETER HW_VER = 5.00.a
- PARAMETER C_DETECT_EN = 1
- PARAMETER C_DET_VSYNC_EN = 0
- PARAMETER C_DET_HSYNC_EN = 0
- PARAMETER C_BASEADDR = 0x76800000
- PARAMETER C_HIGHADDR = 0x7680ffff
- BUS_INTERFACE S_AXI = axi4lite_0
- BUS_INTERFACE VTIMING_OUT = v_tc_0_VTIMING_OUT
- PORT S_AXI_ACLK = processing_system7_0_FCLK_CLK0
+ PORT clk = fmc_imageon_video_clk1
+ PORT xsvi_active_video_i = v_axi4s_vid_out_0_video_de
+ PORT xsvi_vblank_i = v_axi4s_vid_out_0_video_vblank
+ PORT xsvi_hblank_i = v_axi4s_vid_out_0_video_hblank
+ PORT xsvi_video_data_i = v_axi4s_vid_out_0_video_data
 END
 
 BEGIN v_vid_in_axi4s
@@ -225,14 +252,36 @@ BEGIN v_vid_in_axi4s
  PARAMETER HW_VER = 2.01.a
  PARAMETER C_M_AXIS_VIDEO_FORMAT = 0
  BUS_INTERFACE M_AXIS_VIDEO = v_vid_in_axi4s_0_M_AXIS_VIDEO
+ BUS_INTERFACE VTIMING_OUT = v_vid_in_axi4s_0_VTIMING_OUT
+ PORT vid_in_clk = net_fmc_imageon_hdmi_in_0_clk_pin
+ PORT vid_de = fmc_imageon_hdmi_in_0_video_de
+ PORT vid_vblank = fmc_imageon_hdmi_in_0_video_vblank
+ PORT vid_hblank = fmc_imageon_hdmi_in_0_video_hblank
+ PORT vid_data = fmc_imageon_hdmi_in_0_video_data
+ PORT rst = net_gnd
+ PORT aresetn = net_vcc
+ PORT aclken = net_vcc
+ PORT axis_enable = net_vcc
+ PORT aclk = processing_system7_0_FCLK_CLK1
 END
 
 BEGIN v_axi4s_vid_out
  PARAMETER INSTANCE = v_axi4s_vid_out_0
  PARAMETER HW_VER = 2.01.a
  PARAMETER C_S_AXIS_VIDEO_FORMAT = 0
- BUS_INTERFACE VTIMING_IN = v_tc_0_VTIMING_OUT
+ PARAMETER VTG_MASTER_SLAVE = 1
  BUS_INTERFACE S_AXIS_VIDEO = axi_vdma_0_M_AXIS_MM2S
+ BUS_INTERFACE VTIMING_IN = v_tc_vid_out_0_VTIMING_OUT
+ PORT vtg_ce = v_axi4s_vid_out_0_vtg_ce
+ PORT rst = net_gnd
+ PORT aresetn = net_vcc
+ PORT aclken = net_vcc
+ PORT video_out_clk = fmc_imageon_video_clk1
+ PORT video_de = v_axi4s_vid_out_0_video_de
+ PORT video_data = v_axi4s_vid_out_0_video_data
+ PORT video_vblank = v_axi4s_vid_out_0_video_vblank
+ PORT video_hblank = v_axi4s_vid_out_0_video_hblank
+ PORT aclk = processing_system7_0_FCLK_CLK1
 END
 
 BEGIN axi_vdma
@@ -258,26 +307,18 @@ BEGIN axi_vdma
  BUS_INTERFACE M_AXIS_MM2S = axi_vdma_0_M_AXIS_MM2S
  BUS_INTERFACE M_AXI_MM2S = axi_interconnect_1
  PORT s_axi_lite_aclk = processing_system7_0_FCLK_CLK0
- PORT m_axi_mm2s_aclk = processing_system7_0_FCLK_CLK0
- PORT m_axi_s2mm_aclk = processing_system7_0_FCLK_CLK0
+ PORT m_axi_mm2s_aclk = processing_system7_0_FCLK_CLK1
+ PORT m_axi_s2mm_aclk = processing_system7_0_FCLK_CLK1
+ PORT m_axis_mm2s_aclk = processing_system7_0_FCLK_CLK1
+ PORT s_axis_s2mm_aclk = processing_system7_0_FCLK_CLK1
 END
 
 BEGIN axi_interconnect
  PARAMETER INSTANCE = axi_interconnect_1
  PARAMETER HW_VER = 1.06.a
  PARAMETER C_INTERCONNECT_CONNECTIVITY_MODE = 1
- PORT INTERCONNECT_ACLK = processing_system7_0_FCLK_CLK0
+ PORT INTERCONNECT_ACLK = processing_system7_0_FCLK_CLK1
  PORT INTERCONNECT_ARESETN = processing_system7_0_FCLK_RESET0_N_0
-END
-
-BEGIN v_tc
- PARAMETER INSTANCE = v_tc_vid_out
- PARAMETER HW_VER = 5.00.a
- PARAMETER C_BASEADDR = 0x68a00000
- PARAMETER C_HIGHADDR = 0x68a0ffff
- BUS_INTERFACE S_AXI = axi4lite_0
- BUS_INTERFACE VTIMING_OUT = v_tc_vid_out_VTIMING_OUT
- PORT S_AXI_ACLK = processing_system7_0_FCLK_CLK0
 END
 
 BEGIN led_pwm
@@ -287,5 +328,84 @@ BEGIN led_pwm
  PARAMETER C_HIGHADDR = 0x7660ffff
  BUS_INTERFACE S_AXI = axi4lite_0
  PORT S_AXI_ACLK = processing_system7_0_FCLK_CLK0
+ PORT led0 = led_pwm_0_led0
+ PORT led1 = led_pwm_0_led1
+ PORT led2 = led_pwm_0_led2
+ PORT led3 = led_pwm_0_led3
+ PORT led4 = led_pwm_0_led4
+ PORT led5 = led_pwm_0_led5
+ PORT led6 = led_pwm_0_led6
+ PORT led7 = led_pwm_0_led7
+ PORT led8 = led_pwm_0_led8
+ PORT led9 = led_pwm_0_led9
+ PORT led10 = led_pwm_0_led10
+ PORT led11 = led_pwm_0_led11
+ PORT led12 = led_pwm_0_led12
+ PORT led13 = led_pwm_0_led13
+ PORT led14 = led_pwm_0_led14
+ PORT led15 = led_pwm_0_led15
+ PORT led16 = led_pwm_0_led16
+ PORT led17 = led_pwm_0_led17
+ PORT led18 = led_pwm_0_led18
+ PORT led19 = led_pwm_0_led19
+ PORT led20 = led_pwm_0_led20
+ PORT led21 = led_pwm_0_led21
+ PORT led22 = led_pwm_0_led22
+ PORT led23 = led_pwm_0_led23
+ PORT led24 = led_pwm_0_led24
+ PORT led25 = led_pwm_0_led25
+ PORT led26 = led_pwm_0_led26
+ PORT led27 = led_pwm_0_led27
+ PORT led28 = led_pwm_0_led28
+ PORT led29 = led_pwm_0_led29
+END
+
+BEGIN fmc_imageon_hdmi_in
+ PARAMETER INSTANCE = fmc_imageon_hdmi_in_0
+ PARAMETER HW_VER = 2.01.a
+ PORT video_vblank = fmc_imageon_hdmi_in_0_video_vblank
+ PORT video_hblank = fmc_imageon_hdmi_in_0_video_hblank
+ PORT video_de = fmc_imageon_hdmi_in_0_video_de
+ PORT video_data = fmc_imageon_hdmi_in_0_video_data
+ PORT audio_spdif = fmc_imageon_hdmi_in_0_audio_spdif
+ PORT io_hdmii_spdif = net_fmc_imageon_hdmi_in_0_io_hdmii_spdif_pin
+ PORT io_hdmii_video = net_fmc_imageon_hdmi_in_0_io_hdmii_video_pin
+ PORT clk = net_fmc_imageon_hdmi_in_0_clk_pin
+END
+
+BEGIN v_tc
+ PARAMETER INSTANCE = v_tc_vid_in_0
+ PARAMETER HW_VER = 5.01.a
+ PARAMETER C_DETECT_EN = 1
+ PARAMETER C_DET_VSYNC_EN = 0
+ PARAMETER C_DET_HSYNC_EN = 0
+ PARAMETER C_BASEADDR = 0x76800000
+ PARAMETER C_HIGHADDR = 0x7680ffff
+ PARAMETER C_GENERATE_EN = 0
+ BUS_INTERFACE S_AXI = axi4lite_0
+ BUS_INTERFACE VTIMING_IN = v_vid_in_axi4s_0_VTIMING_OUT
+ PORT s_axi_aclk = processing_system7_0_FCLK_CLK0
+ PORT s_axi_aclken = net_vcc
+ PORT resetn = net_vcc
+ PORT clken = net_vcc
+ PORT det_clken = net_vcc
+ PORT clk = net_fmc_imageon_hdmi_in_0_clk_pin
+END
+
+BEGIN v_tc
+ PARAMETER INSTANCE = v_tc_vid_out_0
+ PARAMETER HW_VER = 5.01.a
+ PARAMETER C_DETECT_EN = 0
+ PARAMETER C_SYNC_EN = 1
+ PARAMETER C_BASEADDR = 0x76820000
+ PARAMETER C_HIGHADDR = 0x7682ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ BUS_INTERFACE VTIMING_OUT = v_tc_vid_out_0_VTIMING_OUT
+ PORT s_axi_aclk = processing_system7_0_FCLK_CLK0
+ PORT s_axi_aclken = net_vcc
+ PORT resetn = net_vcc
+ PORT clken = net_vcc
+ PORT gen_clken = v_axi4s_vid_out_0_vtg_ce
+ PORT clk = fmc_imageon_video_clk1
 END
 

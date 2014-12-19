@@ -1,0 +1,2 @@
+vhdl fmc_imageon_hdmi_in_v2_01_a /home/vens/classes/Fall2014/cpre488/labs/final/Final/repository/ProcessorIPLib/pcores/fmc_imageon_hdmi_in_v2_01_a/hdl/vhdl/fmc_imageon_hdmi_in.vhd
+vhdl work ../hdl/system_fmc_imageon_hdmi_in_0_wrapper.vhd
